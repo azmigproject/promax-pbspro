@@ -176,10 +176,7 @@
       "publicIPDomainName": "[variables('namingInfix')]",
       "sharedStorage": "[parameters('sharedStorage')]",
       "monitoring": "[parameters('monitoring')]",
-      "scheduler": "[parameters('scheduler')]",
-      "nasname": "[parameters('nasName')]",
-      "nasdevice": "[parameters('nasDevice')]",
-      "mountPoint": "[parameters('nasMountPoint')]",
+      "scheduler": "[parameters('scheduler')]",     
       "dataDiskSize": "[parameters('dataDiskSize')]",
       "nbDataDisks": "[parameters('nbDataDisks')]"
     },
