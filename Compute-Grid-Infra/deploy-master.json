@@ -198,7 +198,7 @@
       "sharedStorage": "[parameters('sharedStorage')]",
       "monitoring": "[parameters('monitoring')]",
       "scheduler": "[parameters('scheduler')]",
-       "nasname": "[parameters('nasName')]",
+      "nasname": "[parameters('nasName')]",
       "nasdevice": "[parameters('nasDevice')]",
       "mountPoint": "[parameters('nasMountPoint')]",
       "dataDiskSize": "[parameters('dataDiskSize')]",
