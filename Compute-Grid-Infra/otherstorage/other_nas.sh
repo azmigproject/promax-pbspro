@@ -8,9 +8,9 @@ if [[ $(id -u) -ne 0 ]] ; then
     exit 1
 fi
 
-read -p "Please enter NAS Name: " nasname
-read -p "Please enter NAS Device: " nasdevice
-read -p "Please enter Mount Point: " mountPoint
+#read -p "Please enter NAS Name: " nasname
+#read -p "Please enter NAS Device: " nasdevice
+#read -p "Please enter Mount Point: " mountPoint
 # Shares
 NAS_DATA=/data
 
@@ -21,13 +21,13 @@ HPC_GROUP=hpc
 HPC_GID=7007
 
 #is_centos()
-#{
+##{
 #	python -mplatform | grep -qi CentOS
 #	return $?
 #}
 
 #is_suse()
-#{
+##{
 #	python -mplatform | grep -qi Suse
 #	return $?
 #}
@@ -35,19 +35,19 @@ HPC_GID=7007
 # Installs all required packages.
 #
 #install_pkgs_centos()
-#{
+##{
 #	yum -y install nfs-utils nfs-utils-lib
 #}
 
 #install_pkgs_suse()
-#{
+##{
 #	zypper -n install nfs-client nfs-kernel-server mdadm
 #}
 
 # Partitions all data disks attached to the VM 
 #
-setup_data_disks()
-#{
+#setup_data_disks()
+##{
     nasname="$1"
     nasdevice="$2"
     mountPoint="$3"
@@ -95,7 +95,7 @@ setup_data_disks()
 #}
 
 #setup_disks()
-#{      
+##{      
 #    # Dump the current disk config for debugging
 #    fdisk -l
 #    
