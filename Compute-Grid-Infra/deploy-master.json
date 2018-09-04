@@ -183,7 +183,7 @@
       "storageSubnet": "[parameters('storagesubnet')]",
       "infraSubnet": "[parameters('infrasubnet')]",
       "gatewaySubnet": "[parameters('gatewaysubnet')]",
-      "vnetRG": "[parameters('RGname')]",
+      "vnetRG": "[parameters('RGname')]",     
       "nsgName": "nsg-master"
     },
     "masterBoxName": "[concat(variables('longNamingInfix'), 'master')]",
@@ -198,6 +198,9 @@
       "sharedStorage": "[parameters('sharedStorage')]",
       "monitoring": "[parameters('monitoring')]",
       "scheduler": "[parameters('scheduler')]",
+       "nasname": "[parameters('nasName')]",
+      "nasdevice": "[parameters('nasDevice')]",
+      "mountPoint": "[parameters('nasMountPoint')]",
       "dataDiskSize": "[parameters('dataDiskSize')]",
       "nbDataDisks": "[parameters('nbDataDisks')]"
     },
