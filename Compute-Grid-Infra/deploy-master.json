@@ -45,7 +45,7 @@
         "otherstorage"
       ],
       "metadata": {
-        "description": "specify the shared storage to be used. beegfs=> beegfs cluster, nfsonmaster=> nfs share on the master, otherstorage=> otherstorage"
+        "description": "specify the shared storage to be used. beegfs=> beegfs cluster, nfsonmaster=> nfs share on the master"
       }
     },
     "dataDiskSize": {
@@ -162,7 +162,7 @@
       "storageSubnet": "[parameters('storagesubnet')]",
       "infraSubnet": "[parameters('infrasubnet')]",
       "gatewaySubnet": "[parameters('gatewaysubnet')]",
-      "vnetRG": "[parameters('RGname')]",     
+      "vnetRG": "[parameters('RGname')]",
       "nsgName": "nsg-master"
     },
     "masterBoxName": "[concat(variables('longNamingInfix'), 'master')]",
@@ -176,7 +176,7 @@
       "publicIPDomainName": "[variables('namingInfix')]",
       "sharedStorage": "[parameters('sharedStorage')]",
       "monitoring": "[parameters('monitoring')]",
-      "scheduler": "[parameters('scheduler')]",     
+      "scheduler": "[parameters('scheduler')]",
       "dataDiskSize": "[parameters('dataDiskSize')]",
       "nbDataDisks": "[parameters('nbDataDisks')]"
     },
