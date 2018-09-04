@@ -9,10 +9,19 @@
       }
     }
   },
+  "ScriptsOptions": {
+      "none": {
+        "params": ""
+      },
+      "otherstorage": {
+        "params": " -S otherstorage"
+      }
+  },
   "variables": {
     "vmScripts": {
       "scriptsToDownload": [
-        "[uri(deployment().properties.templateLink.uri, 'master-setup.sh')]"
+        "[uri(deployment().properties.templateLink.uri, 'master-setup.sh')]",
+	"[uri(deployment().properties.templateLink.uri, 'otherstorage/other_nas.sh')]"
       ],
       "commandToExecute": "bash master-setup.sh"
     },

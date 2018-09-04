@@ -79,7 +79,7 @@ The template __deploy-master.json__ will provision the networking infrastructure
 
 You have to provide these parameters to the template :
 * _vmPrefix_ : a 8 characters prefix to be used to name your objects. The master VM will be named as **\[prefix\]master**
-* _sharedStorage_ : to specify the shared storage to use. Allowed values are : none, beegfs, nfsonmaster.
+* _sharedStorage_ : to specify the shared storage to use. Allowed values are : none, beegfs, nfsonmaster, otherstorage.
 * _scheduler_ : the job scheduler to be setup. Allowed values are : none, pbspro
 * _monitoring_ : the monitoring tools to be setup. Allowed values are : none, ganglia
 * _masterImage_ : the OS to be used. Should be CentOS_7.2
@@ -100,6 +100,8 @@ To check if PBSPro is installed, run the command **pbsnodes -a** this should ret
 If **nfsonmaster** is choosen, an NFS mount point named **/data** will be created.
 
 BeeGFS will be checked later once the storage nodes will be deployed.
+
+If **otherstorage** is chosen, Other storage like Softnas can be mounted.
 
 ## Optionally deploy the BeeGFS nodes
 
@@ -146,7 +148,7 @@ Compute nodes are provisioned using VM Scalesets, each set can have up to 100 VM
 
 You have to provide these parameters to the template :
 * _VMsku_ : Instance type to provision. Default is **Standard_D3_v2**
-* _sharedStorage_ : default is **none**. Allowed values are (nfsonmaster, beegfs, none)
+* _sharedStorage_ : default is **none**. Allowed values are (nfsonmaster, beegfs, none, otherstorage)
 * _scheduler_ : default is **none**. Allowed values are (pbspro, none)
 * _monitoring_ : default is **ganglia**. Allowed values are (ganglia, none)
 * _computeNodeImage_ : OS to use for compute nodes. Default and recommended value is **CentOS_7.2**
