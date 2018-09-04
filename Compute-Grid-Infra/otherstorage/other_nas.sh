@@ -8,6 +8,9 @@ if [[ $(id -u) -ne 0 ]] ; then
     exit 1
 fi
 
+read -p "Please enter NAS Name: " nasname
+read -p "Please enter NAS Device: " nasdevice
+read -p "Please enter Mount Point: " mountPoint
 # Shares
 NAS_DATA=/data
 
