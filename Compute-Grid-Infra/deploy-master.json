@@ -41,7 +41,7 @@
       "allowedValues": [
         "none",
         "beegfs",
-        "nfsonmaster"
+        "nfsonmaster",
 	"otherstorage"
       ],
       "metadata": {
