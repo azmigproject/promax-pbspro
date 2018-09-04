@@ -130,7 +130,7 @@ setup_data_disks()
 
 
 mkdir -p /var/local
-SETUP_MARKER=/var/local/install_nfs.marker
+SETUP_MARKER=/var/local/install_nas.marker
 if [ -e "$SETUP_MARKER" ]; then
     echo "We're already configured, exiting..."
     exit 0
